@@ -5,11 +5,6 @@ from data_clean import *
 # https://towardsdatascience.com/heres-how-you-can-access-your-entire-imessage-history-on-your-mac-f8878276c6e9
 # https://github.com/yortos/imessage-analysis/blob/master/imessages-data-extract-and-prep.ipynb
 
-# TODO: make this work, ideally.
-
-# the included methods are currently the most useful for my ML purposes.
-# If later on I want to do timeseries data analytics or create a more fleshed-out library, go on to implement other ways of parameterizing the queries
-
 
 class iMessageDBWrapper(object):
 
