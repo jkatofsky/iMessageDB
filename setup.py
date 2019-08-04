@@ -7,5 +7,5 @@ setup(name='iMessageDB',
       author='Josh Katofsky',
       license='MIT',
       install_requires=[
-          'pandas', 'sqlite3'
+          'pandas'
       ])
