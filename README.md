@@ -6,13 +6,11 @@ I've written this README under the assumption you're running this on macOS. Obvi
 
 ## Installation
 
-First, install this module:
-
 ```bash
 pip3 install git+git://github.com/jkatofsky/iMessageDB.git
 ```
 
-Next, use the package
+## Usage
 
 ```python
 from iMessageDB import iMessageDBWrapper
@@ -21,6 +19,8 @@ if __name__ == "__main__":
     wrapper = iMessageDBWrapper()
     #call wrapper's methods
 ```
+
+## Troubleshooting
 
 Depending on your system's configurations, an error may be thrown when trying to read the database. In this case, you can copy it to your local project directory:
 

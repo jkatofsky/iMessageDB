@@ -1,6 +1,3 @@
-# TODO: implement these cleaning functions
-
-
 def clean_handle_df(handle_df):
     return handle_df
 
