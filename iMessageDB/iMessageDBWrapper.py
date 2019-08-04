@@ -8,7 +8,7 @@ from data_clean import *
 
 class iMessageDBWrapper(object):
 
-    def __init__(self, path_to_db):
+    def __init__(self, path_to_db="~/Library/Messages/chat.db"):
         self.conn = sqlite3.connect(path_to_db)
 
     def get_handle_metadata(self):
