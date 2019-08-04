@@ -1,5 +1,7 @@
 import sqlite3
 import pandas
+from pathlib import Path
+
 from data_clean import *
 
 # https://towardsdatascience.com/heres-how-you-can-access-your-entire-imessage-history-on-your-mac-f8878276c6e9
@@ -12,7 +14,9 @@ from data_clean import *
 
 class iMessageDBWrapper(object):
 
-    def __init__(self, path_to_db="~/Library/Messages/chat.db"):
+    def __init__(self, path_to_db=None):
+        if not path_to_db:
+            path_to_db = str(Path.home()) + "/Library/Messages/chat.db"
         self.conn = sqlite3.connect(path_to_db)
 
     def get_handle_metadata(self, clean_data=True):

@@ -17,7 +17,7 @@ pip3 install git+git://github.com/jkatofsky/iMessageDB.git
 To automatically read from your active iMessage database:
 
 ```python
-from iMessageDB import iMessageDBWrapper
+from iMessageDB.iMessageDBWrapper import iMessageDBWrapper
 
 if __name__ == "__main__":
     wrapper = iMessageDBWrapper()
