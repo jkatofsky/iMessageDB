@@ -2,7 +2,9 @@
 
 A wrapper for querying local iMessage databases and getting its data in useful DataFrames.
 
-I've written this README under the assumption you're running this on macOS. Obviously, any machine without iMessage will find this module much less useful.
+## Support
+
+While it is possible to copy the iMessage database file to any system, this module has been tested on macOS only.
 
 ## Installation
 
@@ -12,6 +14,8 @@ pip3 install git+git://github.com/jkatofsky/iMessageDB.git
 
 ## Usage
 
+To automatically read from your active iMessage database:
+
 ```python
 from iMessageDB import iMessageDBWrapper
 
@@ -20,24 +24,19 @@ if __name__ == "__main__":
     #call wrapper's methods
 ```
 
-## Troubleshooting
-
-Depending on your system's configurations, an error may be thrown when trying to read the database. In this case, you can copy it to your local project directory:
+Or, if you wish to copy the database to your project's directory:
 
 ```bash
+cd desired/directory/
 cp ~/Library/Messages/chat.db .
 ```
 
-Lastly, if this does not work:
-
-```bash
-open ~/Library/Messages/
-```
-
-and copy ```chat.db``` to your local project using the Finder.
-
-If you are using a copied database, pass its path when you initialize the wrapper.
+Then, pass the wrapper the new path:
 
 ```python
 wrapper = iMessageDBWrapper("data/chat.db") #example
 ```
+
+## Troubleshooting
+
+Depending on your system's configurations, an error may be thrown when trying to read the database. In this case, go to ```System Preferences > Security and Privacy > Privacy > Full Disk Access``` and check the box beside whichever editor or terminal from which you are running your code.

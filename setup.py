@@ -5,4 +5,7 @@ setup(name='iMessageDB',
       description='A wrapper for local iMessage database',
       url='https://github.com/jkatofsky/iMessageDB',
       author='Josh Katofsky',
-      license='MIT')
+      license='MIT',
+      install_requires=[
+          'pandas', 'sqlite3'
+      ])
