@@ -27,7 +27,7 @@ if __name__ == "__main__":
 Or, if you wish to copy the database to your project's directory:
 
 ```bash
-cd desired/directory/
+cd data #example
 cp ~/Library/Messages/chat.db .
 ```
 
@@ -39,4 +39,4 @@ wrapper = iMessageDBWrapper("data/chat.db") #example
 
 ## Troubleshooting
 
-Depending on your system's configurations, an error may be thrown when trying to read the database. In this case, go to ```System Preferences > Security and Privacy > Privacy > Full Disk Access``` and check the box beside whichever editor or terminal from which you are running your code.
+Depending on your system's configurations, an error may be thrown when trying to read the database. In this case, go to ```System Preferences > Security and Privacy > Privacy > Full Disk Access``` and check the box beside the editor or terminal from which you are running your code.
