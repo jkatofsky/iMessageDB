@@ -1,6 +1,6 @@
 # iMessageDB
 
-A wrapper for querying local iMessage databases and getting its data in useful DataFrames.
+A python module for querying local iMessage databases and getting its data in useful DataFrames.
 
 ## Support
 
