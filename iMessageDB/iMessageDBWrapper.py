@@ -2,7 +2,7 @@ import sqlite3
 import pandas
 from pathlib import Path
 
-from data_clean import *
+from .data_clean import *
 
 # https://towardsdatascience.com/heres-how-you-can-access-your-entire-imessage-history-on-your-mac-f8878276c6e9
 # https://github.com/yortos/imessage-analysis/blob/master/imessages-data-extract-and-prep.ipynb
