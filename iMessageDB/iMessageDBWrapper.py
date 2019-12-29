@@ -7,7 +7,6 @@ from .data_clean import *
 # https://towardsdatascience.com/heres-how-you-can-access-your-entire-imessage-history-on-your-mac-f8878276c6e9
 # https://github.com/yortos/imessage-analysis/blob/master/imessages-data-extract-and-prep.ipynb
 
-# TODO: fix the issues with pip installation
 # TODO: parameterize queries based on time as well
 # TODO: implement cleaning functions
 # TODO: add documentation
